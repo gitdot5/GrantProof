@@ -1,47 +1,31 @@
-# Voiceover for the automated demo
+# GrantProof demo voiceover
 
-The Playwright recording is silent. This narration is written for its roughly 2:08 runtime. Read at a conversational pace, leaving short pauses while chapter cards appear. It describes the default **deterministic fixture** recording accurately; do not call it a live AI run.
+This is a product narration for the roughly 2:08 automated demo. It tells the story behind the workflow rather than describing each click. The recording uses fictional Tidepath data and deterministic fixture mode, so do not describe this particular recording as a live AI run.
 
-## Ready-to-read narration
+## Ready-to-read script
 
-**0:00–0:15 · Workspace and portfolio**
+> For a small nonprofit, reporting impact can take time away from creating it. Program results are scattered across documents, grant spending lives in spreadsheets, and one coordinator has to turn it all into a report a funder can trust.
 
-“GrantProof helps Tidepath, a fictional nonprofit, turn its own records into grant reports. One workspace shows two funders, each with its own reporting dates, budget, and tasks that still need a person.”
+> Meet GrantProof. It brings evidence, spending, and grant reporting into one workspace, so a team can move from raw records to a reviewable report with confidence.
 
-**0:15–0:30 · Evidence**
+> GrantProof starts with the source. Staff bring in program records, review the facts they contain, and approve what is ready to use. Each grant keeps its own questions, reporting period, budget, and deadlines. That context matters: a future goal should never be presented as an outcome already achieved.
 
-“Here are the original program records. Staff approved the outcome for 120 families. The preliminary 92 percent estimate is still pending, so it stays out of supported answers.”
+> When it is time to report, GrantProof prepares the grant for review. It checks the available evidence and spending, then drafts answers grounded in approved facts. Every supported claim points back to the exact source excerpt. A reviewer can trace the answer all the way to the original record.
 
-**0:30–0:45 · Prepare the grant**
+> And when the evidence is missing? GrantProof shows a gap. It will not turn an unapproved estimate into a confident sounding result. The team knows exactly what needs a human decision before the report can move forward.
 
-“One click prepares the grant for review. This recording uses fixture mode, so no AI call is made. The workflow checks evidence and spending, prepares missing answers, and hands the result to staff.”
+> The financial side gets the same care. Import transactions from an accounting CSV, skip duplicates, allocate spending to grant categories, and see what has been spent and what remains. Budget warnings and unallocated transactions surface before approval, while each funder's reporting period stays separate.
 
-**0:45–1:03 · Answers and activity**
+> Finally, a person reviews the complete package. Approval seals the report and its financials with a verifiable hash. If an answer changes afterward, that approval is invalidated and export is blocked until the new version is reviewed. The exported report and audit package preserve what was actually approved.
 
-“Each answer uses approved source excerpts. Its saved activity receipt shows what ran, including the spending check and draft validation. We can open a source link to see the exact sentence, document, and reporting period.”
+> GrantProof helps small teams spend less time assembling reports and more time serving people. Every claim has evidence. Every grant dollar reconciles. And the final decision stays with the humans responsible for it.
 
-**1:03–1:15 · Evidence gap**
+## Produce the narrated video
 
-“For the second funder, the future goal is not yet approved. GrantProof shows an evidence gap instead of inventing a claim.”
-
-**1:15–1:35 · Reconciled spending**
-
-“The 2026 grant has a 50,000 dollar budget, 16,200 dollars spent, and 33,800 remaining. Reimporting the sample accounting CSV skips four duplicates, leaving those totals unchanged. The second funder uses a different reporting year.”
-
-**1:35–1:50 · Approval and report**
-
-“A human reviewer approves the exact application and financial report. The downloads include a readable report and an audit package sealed with a SHA-256 hash.”
-
-**1:50–2:08 · Edit and export lock**
-
-“Now we change a sourced answer to an unsupported number. Approval is invalidated, the checks flag the wording, and export is blocked. Drafting helps staff move faster; staff still decide what leaves.”
-
-## Add the recorded voice
-
-Record the narration as `.wav`, `.m4a`, or `.mp3`, then run:
+The current WebM recording has no audio. Record the script above as `.wav`, `.m4a`, or `.mp3`, then combine it with the video:
 
 ```sh
 npm run demo:voiceover -- --video demo-output/your-recording.webm --audio demo-output/narration.m4a
 ```
 
-The command makes `your-recording-voiced.mp4` beside the video. It pads short audio with silence or trims audio that runs past the video. It requires FFmpeg on your PATH. You can also import the WebM and narration into Descript or another editor to adjust timing before exporting. Review the final MP4 before sharing it.
+This creates `your-recording-voiced.mp4` beside the video. The helper pads short audio with silence or trims audio that runs beyond the video. It requires FFmpeg. You can use a recorded human voice for the final submission, or synthesize a draft narration with a text-to-speech voice and review its timing before sharing.
