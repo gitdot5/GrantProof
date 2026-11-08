@@ -2,6 +2,14 @@
 
 Working format, not a claim about the event's required video length. Use fictional records only. The app's guided entry is **Dashboard → Try the demo**. Choose **South Beach** for a light presentation, **Wynwood** for the neon/mural treatment, or **Little Havana** for warm Calle Ocho-inspired storefronts.
 
+## Record the browser walkthrough
+
+From the repository root, run `npm ci` and `npx playwright install ffmpeg` once, then `npm run demo:record`. The command builds the current app, starts it on an isolated loopback port with a fresh temporary fictional database, and saves a WebM video plus the downloaded HTML report and JSON audit package in ignored `demo-output/`. It shows the portfolio, prepares the Family Futures grant for staff review, and uses the South Beach theme and deterministic fixture generation, which the video labels explicitly. The script never resets the normal workspace database.
+
+For a specifically authorized paid live SDK recording, run `npm run demo:record -- --live` with an available `OPENAI_API_KEY`. Use `--headed` to watch the browser, or `--output path.webm` to choose the video path. The script opens the saved generation activity receipt and its linked evidence; live mode also reveals a tool name, while fixture mode states that no AI was called. It verifies the visible evidence gap, the $50,000 / $16,200 / $33,800 totals, duplicate CSV handling, approval hash, actual downloads, and the export lock after an unsupported edit. Review the video and add narration before submission.
+
+The ready-to-read [voiceover script](VOICEOVER.md) follows the recorded scenes. Record it separately, then use `npm run demo:voiceover` to combine the audio and video into an MP4.
+
 ## The opening, in plain language
 
 “We built GrantProof to turn a nonprofit's own records into a grant report. Every claim points to approved evidence. Every dollar reconciles against the funder's categories and dates. Staff approve the exact package before it leaves. Change a claim afterward and export locks. Let me show you.”
