@@ -1,0 +1,9 @@
+{
+  "file": "GrantProof-Miami-3min-pitch.mp4",
+  "sha256": "04e027cfa3890428cd1cc78b35b6fcb104a10dcab5c4380cd7c154572dd8c854",
+  "bytes": 10898935,
+  "durationSeconds": 180,
+  "video": "H.264, 1920x1080, 25 fps",
+  "audio": "AAC stereo",
+  "validation": "Complete video and audio decode passed before publication; originals retained locally."
+}

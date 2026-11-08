@@ -1,0 +1,7 @@
+**Problem:** The brief describes Tidepath Family Alliance, a fictional Miami-Dade nonprofit whose director rewrites its program story for about a dozen funders with different questions and word limits. Its part-time bookkeeper rebuilds spending in each funder’s own reporting year.
+
+**What GrantProof does:** GrantProof prepares cited answers from staff-approved facts, checks each question’s word limit, and makes missing evidence visible as a gap. Only supported, approved excerpts can pass validation. Spending reconciles by category in integer cents within each funder’s own year. A workflow agent audits evidence and spending, prepares missing answers, and hands blockers to staff; the portfolio supports due-report and all-grant preparation, with an optional local worker for enabled reports on staff-saved due dates. Staff approve the exact package, which is sealed by hash. Later content or evidence changes invalidate approval and lock export until staff review it again.
+
+**Built with:** Codex, the OpenAI API, and the OpenAI Agents SDK (`@openai/agents`). Free fixture mode supports the demonstration without a live API key.
+
+**Honest limits:** Local prototype using fictional data only. CSV import, not a live QuickBooks connection. The background worker must be installed and running on an awake Studio; merging code does not activate it. Time savings have not been measured. The three-minute pitch labels fixture workflow footage and recorded live agent footage separately.
