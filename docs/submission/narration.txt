@@ -1,0 +1,15 @@
+000s — Miami deserves nonprofits focused on families. Meet GrantProof: an evidence-first grant workspace built for the people who keep our communities moving. Our starting point is simple. Let agents prepare the work. Keep people in control.
+
+018s — The challenge brief describes Tidepath, a fictional Miami-Dade nonprofit supporting children and families. Its director rewrites the same story for different funders. Its bookkeeper rebuilds spending in different fiscal years. Every deadline creates another opportunity for an unsupported claim or a spending mistake.
+
+038s — Here is the working prototype, using clearly labeled fixture data. Staff-approved facts become the source of truth. Draft answers link back to evidence and are checked against the funder’s requirements. The spending view uses each funder’s own year and integer cents. Re-importing the same CSV does not double-count spending: the balance stays at thirty-three thousand eight hundred dollars. Staff review the package and approve that exact version. When an answer changes afterward, the export is blocked until the revised package passes review and receives a new approval. The goal is a reviewable chain from source to submission-ready work, with a human decision at the end.
+
+096s — This clip shows an actual live OpenAI agent run. It retrieves approved facts, retrieves the grant requirements, and calls deterministic spending validation. The receipt records the tools used. Staff can open the original evidence behind the answer. Code checks the output before it is accepted. The model drafts; it cannot approve the final package.
+
+123s — The coordinator audits evidence and spending, prepares missing answers, and checks review readiness. It preserves existing answers and leaves the approval decision with staff.
+
+135s — For a Miami pilot, the proposition is practical: one place to see every grant’s readiness, missing evidence, deadlines, and category limits. The portfolio is working today. An optional local worker prepares enabled reports on saved due dates, even with the browser closed. It must be running on an awake Studio. Staff still review and approve every final package.
+
+155s — We would start a city-supported pilot with nonprofit staff and funder reviewers. Measure review time, correction rates, and spending exceptions before claiming savings. Today this is a local prototype with fictional data and CSV import, not a live QuickBooks connection. Built with Codex, the OpenAI API, and the Agents SDK.
+
+174s — GrantProof. Let agents prepare. Let people approve. More confidence for the people serving Miami.
